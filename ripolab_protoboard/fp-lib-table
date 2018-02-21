@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name mi_protoboard)(type KiCad)(uri "$(KIPRJMOD)/mi_protoboard.pretty")(options "")(descr ""))
+  (lib (name cara)(type KiCad)(uri "$(KIPRJMOD)/cara.pretty")(options "")(descr ""))
+)

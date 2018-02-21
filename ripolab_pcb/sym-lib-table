@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name wickerlib)(type Legacy)(uri ${KIPRJMOD}/wickerlib.lib)(options "")(descr ""))
+  (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/ESP8266.lib)(options "")(descr ""))
+)

@@ -1,0 +1,123 @@
+EESchema Schematic File Version 4
+LIBS:ripolab_pcb_kids-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_DIP_x02 SW1
+U 1 1 5A60B36C
+P 6180 2250
+F 0 "SW1" H 6180 2617 50  0000 C CNN
+F 1 "SW_DIP_x02" H 6180 2526 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6180 2250 50  0001 C CNN
+F 3 "" H 6180 2250 50  0001 C CNN
+	1    6180 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5A60BA25
+P 5180 3800
+F 0 "#PWR01" H 5180 3550 50  0001 C CNN
+F 1 "GND" H 5185 3627 50  0000 C CNN
+F 2 "" H 5180 3800 50  0001 C CNN
+F 3 "" H 5180 3800 50  0001 C CNN
+	1    5180 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:LM555 U1
+U 1 1 5A6A5096
+P 5430 2980
+F 0 "U1" H 5430 3558 50  0000 C CNN
+F 1 "LM555" H 5430 3467 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5430 2980 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5430 2980 50  0001 C CNN
+	1    5430 2980
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5A6A5563
+P 4260 2530
+F 0 "D4" H 4251 2746 50  0000 C CNN
+F 1 "LED" H 4251 2655 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 4260 2530 50  0001 C CNN
+F 3 "~" H 4260 2530 50  0001 C CNN
+	1    4260 2530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5A6A5627
+P 3750 2530
+F 0 "D3" H 3741 2746 50  0000 C CNN
+F 1 "LED" H 3741 2655 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 3750 2530 50  0001 C CNN
+F 3 "~" H 3750 2530 50  0001 C CNN
+	1    3750 2530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5A6A5687
+P 3260 2530
+F 0 "D2" H 3251 2746 50  0000 C CNN
+F 1 "LED" H 3251 2655 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 3260 2530 50  0001 C CNN
+F 3 "~" H 3260 2530 50  0001 C CNN
+	1    3260 2530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5A6A56F9
+P 2740 2530
+F 0 "D1" H 2731 2746 50  0000 C CNN
+F 1 "LED" H 2731 2655 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 2740 2530 50  0001 C CNN
+F 3 "~" H 2740 2530 50  0001 C CNN
+	1    2740 2530
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2530 4110 2530
+Wire Wire Line
+	3600 2530 3410 2530
+Wire Wire Line
+	3110 2530 2890 2530
+Wire Wire Line
+	2590 2530 2380 2530
+Wire Wire Line
+	2380 2530 2380 3680
+Wire Wire Line
+	2380 3680 5180 3680
+Wire Wire Line
+	5180 3680 5180 3800
+Wire Wire Line
+	5430 3380 5430 3680
+Wire Wire Line
+	5430 3680 5180 3680
+Connection ~ 5180 3680
+Wire Wire Line
+	5430 2580 5430 2250
+Wire Wire Line
+	5430 2250 5880 2250
+Wire Wire Line
+	4930 2980 4690 2980
+Wire Wire Line
+	4690 2980 4690 2530
+Wire Wire Line
+	4690 2530 4410 2530
+$EndSCHEMATC

@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name svg2mod-master)(type KiCad)(uri /home/akirasan/Descargas/svg2mod-master)(options "")(descr ""))
+  (lib (name ESP8266)(type KiCad)(uri "$(KIPRJMOD)/ESP8266.pretty")(options "")(descr ""))
+  (lib (name Wickerlib)(type KiCad)(uri "$(KIPRJMOD)/Wickerlib.pretty")(options "")(descr ""))
+  (lib (name ripolab_pcb)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
+  (lib (name aro)(type KiCad)(uri "$(KIPRJMOD)/aro.pretty")(options "")(descr ""))
+)
