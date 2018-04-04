@@ -22,19 +22,8 @@ Text GLabel 2675 2250 2    47   Input ~ 0
 Rx
 Text GLabel 1775 3350 3    47   Input ~ 0
 GND
-Text GLabel 1775 1550 1    47   Input ~ 0
+Text GLabel 1775 1490 1    47   Input ~ 0
 +3,3V
-$Comp
-L ESP8266:ESP-12 U1
-U 1 1 5A2007BB
-P 1775 2450
-F 0 "U1" H 1775 2350 50  0000 C CNN
-F 1 "ESP-12" H 1775 2550 50  0000 C CNN
-F 2 "ESP8266:ESP-12E_SMD" H 1775 2450 50  0001 C CNN
-F 3 "" H 1775 2450 50  0001 C CNN
-	1    1775 2450
-	1    0    0    -1  
-$EndComp
 Text GLabel 2675 2350 2    47   Input ~ 0
 GPIO5
 Text GLabel 2675 2450 2    47   Input ~ 0
@@ -145,7 +134,7 @@ L Device:C_Small C1
 U 1 1 5A26A6C4
 P 1070 4725
 F 0 "C1" H 1080 4795 50  0000 L CNN
-F 1 "10nF" H 1080 4645 50  0000 L CNN
+F 1 "47uF" H 1080 4645 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.50mm_HandSolder" H 1070 4725 50  0001 C CNN
 F 3 "" H 1070 4725 50  0001 C CNN
 	1    1070 4725
@@ -297,12 +286,10 @@ Text GLabel 5480 1510 2    50   Input ~ 0
 VBAT
 Text GLabel 5480 1610 2    50   Input ~ 0
 GND
-NoConn ~ 8510 1580
-Text GLabel 8900 1310 1    47   Input ~ 0
+Text GLabel 9000 1350 1    47   Output ~ 0
 +3,3V
-Text GLabel 7420 1380 1    50   Input ~ 0
+Text GLabel 7420 1080 1    50   Input ~ 0
 VBAT_SW
-NoConn ~ 6590 1640
 Text GLabel 6190 1540 0    50   Input ~ 0
 VBAT
 Text GLabel 6590 1440 2    50   Input ~ 0
@@ -319,56 +306,56 @@ F 3 "" H 6390 1540 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wickerlib:TEST_1P RESET1
+L wickerlib:TEST_1P RST_1
 U 1 1 5A60F6FF
 P 3350 1750
-F 0 "RESET1" V 3304 1938 50  0000 L CNN
+F 0 "RST_1" V 3304 1938 50  0000 L CNN
 F 1 "TEST_1P" V 3395 1938 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 3550 1750 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 3550 1750 50  0001 C CNN
 F 3 "" H 3550 1750 50  0000 C CNN
 	1    3350 1750
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P ADC1
+L wickerlib:TEST_1P ADC_1
 U 1 1 5A60F79F
 P 3350 1925
-F 0 "ADC1" V 3304 2113 50  0000 L CNN
+F 0 "ADC_1" V 3304 2113 50  0000 L CNN
 F 1 "ADC" V 3395 2113 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 3550 1925 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 3550 1925 50  0001 C CNN
 F 3 "" H 3550 1925 50  0000 C CNN
 	1    3350 1925
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P CH_PD1
+L wickerlib:TEST_1P CH_PD_1
 U 1 1 5A60F7E9
 P 3350 2100
-F 0 "CH_PD1" V 3304 2288 50  0000 L CNN
+F 0 "CH_PD_1" V 3304 2288 50  0000 L CNN
 F 1 "CH_PD" V 3395 2288 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 3550 2100 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 3550 2100 50  0001 C CNN
 F 3 "" H 3550 2100 50  0000 C CNN
 	1    3350 2100
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P W1
+L wickerlib:TEST_1P GPIO16
 U 1 1 5A60F825
 P 3350 2275
-F 0 "W1" V 3304 2463 50  0000 L CNN
+F 0 "GPIO16" V 3304 2463 50  0000 L CNN
 F 1 "TEST_1P" V 3395 2463 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 3550 2275 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 3550 2275 50  0001 C CNN
 F 3 "" H 3550 2275 50  0000 C CNN
 	1    3350 2275
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P W2
+L wickerlib:TEST_1P GPIO14
 U 1 1 5A60F871
 P 3350 2450
-F 0 "W2" V 3304 2638 50  0000 L CNN
+F 0 "GPIO14" V 3304 2638 50  0000 L CNN
 F 1 "TEST_1P" V 3395 2638 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 3550 2450 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 3550 2450 50  0001 C CNN
 F 3 "" H 3550 2450 50  0000 C CNN
 	1    3350 2450
 	0    1    1    0   
@@ -384,34 +371,34 @@ GPIO16
 Text GLabel 3350 2450 0    47   Input ~ 0
 GPIO14
 $Comp
-L wickerlib:TEST_1P W3
+L wickerlib:TEST_1P GPIO12
 U 1 1 5A6104B6
 P 3350 2625
-F 0 "W3" V 3304 2813 50  0000 L CNN
+F 0 "GPIO12" V 3304 2813 50  0000 L CNN
 F 1 "TEST_1P" V 3395 2813 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 3550 2625 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 3550 2625 50  0001 C CNN
 F 3 "" H 3550 2625 50  0000 C CNN
 	1    3350 2625
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P W4
+L wickerlib:TEST_1P GPIO13
 U 1 1 5A6104F8
 P 3350 2800
-F 0 "W4" V 3304 2988 50  0000 L CNN
+F 0 "GPIO13" V 3304 2988 50  0000 L CNN
 F 1 "TEST_1P" V 3395 2988 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 3550 2800 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 3550 2800 50  0001 C CNN
 F 3 "" H 3550 2800 50  0000 C CNN
 	1    3350 2800
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P TX1
+L wickerlib:TEST_1P TX_1
 U 1 1 5A610536
 P 4230 1750
-F 0 "TX1" V 4184 1938 50  0000 L CNN
+F 0 "TX_1" V 4184 1938 50  0000 L CNN
 F 1 "TX" V 4275 1938 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 4430 1750 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 4430 1750 50  0001 C CNN
 F 3 "" H 4430 1750 50  0000 C CNN
 	1    4230 1750
 	0    1    1    0   
@@ -421,67 +408,67 @@ GPIO12
 Text GLabel 3350 2800 0    47   Input ~ 0
 GPIO13
 $Comp
-L wickerlib:TEST_1P RX1
+L wickerlib:TEST_1P RX_1
 U 1 1 5A6111FE
 P 4225 1925
-F 0 "RX1" V 4179 2113 50  0000 L CNN
+F 0 "RX_1" V 4179 2113 50  0000 L CNN
 F 1 "RX" V 4270 2113 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 4425 1925 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 4425 1925 50  0001 C CNN
 F 3 "" H 4425 1925 50  0000 C CNN
 	1    4225 1925
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P W5
+L wickerlib:TEST_1P GPIO5
 U 1 1 5A61129E
 P 4225 2100
-F 0 "W5" V 4179 2288 50  0000 L CNN
+F 0 "GPIO5" V 4179 2288 50  0000 L CNN
 F 1 "TEST_1P" V 4270 2288 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 4425 2100 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 4425 2100 50  0001 C CNN
 F 3 "" H 4425 2100 50  0000 C CNN
 	1    4225 2100
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P W6
+L wickerlib:TEST_1P GPIO4
 U 1 1 5A611334
 P 4225 2275
-F 0 "W6" V 4179 2463 50  0000 L CNN
+F 0 "GPIO4" V 4179 2463 50  0000 L CNN
 F 1 "TEST_1P" V 4270 2463 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 4425 2275 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 4425 2275 50  0001 C CNN
 F 3 "" H 4425 2275 50  0000 C CNN
 	1    4225 2275
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P W7
+L wickerlib:TEST_1P GPIO0
 U 1 1 5A6113D8
 P 4225 2450
-F 0 "W7" V 4179 2638 50  0000 L CNN
+F 0 "GPIO0" V 4179 2638 50  0000 L CNN
 F 1 "TEST_1P" V 4270 2638 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 4425 2450 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 4425 2450 50  0001 C CNN
 F 3 "" H 4425 2450 50  0000 C CNN
 	1    4225 2450
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P W8
+L wickerlib:TEST_1P GPIO2
 U 1 1 5A611422
 P 4225 2625
-F 0 "W8" V 4179 2813 50  0000 L CNN
+F 0 "GPIO2" V 4179 2813 50  0000 L CNN
 F 1 "TEST_1P" V 4270 2813 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 4425 2625 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 4425 2625 50  0001 C CNN
 F 3 "" H 4425 2625 50  0000 C CNN
 	1    4225 2625
 	0    1    1    0   
 $EndComp
 $Comp
-L wickerlib:TEST_1P W9
+L wickerlib:TEST_1P GPIO15
 U 1 1 5A611472
 P 4225 2800
-F 0 "W9" V 4179 2988 50  0000 L CNN
+F 0 "GPIO15" V 4179 2988 50  0000 L CNN
 F 1 "TEST_1P" V 4270 2988 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 4425 2800 50  0001 C CNN
+F 2 "ripolab_pcb:TestPad" H 4425 2800 50  0001 C CNN
 F 3 "" H 4425 2800 50  0000 C CNN
 	1    4225 2800
 	0    1    1    0   
@@ -657,7 +644,7 @@ U 1 1 5A6175ED
 P 5340 7330
 F 0 "ON1" H 5332 7075 50  0000 C CNN
 F 1 "LED" H 5332 7166 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 5340 7330 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5340 7330 50  0001 C CNN
 F 3 "" H 5340 7330 50  0001 C CNN
 	1    5340 7330
 	-1   0    0    1   
@@ -705,7 +692,7 @@ L Device:R R7
 U 1 1 5A69F6CE
 P 7670 1580
 F 0 "R7" V 7560 1570 50  0000 C CNN
-F 1 "R" V 7670 1580 50  0000 C CNN
+F 1 "10K" V 7670 1580 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 7600 1580 50  0001 C CNN
 F 3 "" H 7670 1580 50  0001 C CNN
 	1    7670 1580
@@ -714,25 +701,21 @@ $EndComp
 $Comp
 L Device:C C2
 U 1 1 5A69F81A
-P 7420 1790
-F 0 "C2" H 7290 1890 50  0000 L CNN
-F 1 "C" H 7310 1690 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.50mm_HandSolder" H 7458 1640 50  0001 C CNN
-F 3 "" H 7420 1790 50  0001 C CNN
-	1    7420 1790
+P 7420 1740
+F 0 "C2" H 7290 1840 50  0000 L CNN
+F 1 "100nF" H 7310 1640 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.50mm_HandSolder" H 7458 1590 50  0001 C CNN
+F 3 "" H 7420 1740 50  0001 C CNN
+	1    7420 1740
 	1    0    0    -1  
 $EndComp
-Text GLabel 7420 1990 3    50   Input ~ 0
+Text GLabel 7420 2115 3    50   Input ~ 0
 GND
 Wire Wire Line
 	7910 1480 7520 1480
 Wire Wire Line
-	7420 1480 7420 1380
-Wire Wire Line
-	7420 1480 7420 1640
+	7420 1480 7420 1590
 Connection ~ 7420 1480
-Wire Wire Line
-	7420 1940 7420 1990
 Wire Wire Line
 	7520 1580 7520 1480
 Connection ~ 7520 1480
@@ -740,11 +723,6 @@ Wire Wire Line
 	7520 1480 7420 1480
 Wire Wire Line
 	7820 1580 7910 1580
-Wire Wire Line
-	7420 1940 8210 1940
-Wire Wire Line
-	8210 1940 8210 1880
-Connection ~ 7420 1940
 $Comp
 L wickerlib:LED-RGB-WS2812B-4SMD LED8
 U 1 1 5A81B352
@@ -779,10 +757,6 @@ Connection ~ 8520 4500
 Wire Wire Line
 	8520 4500 9735 4500
 Connection ~ 9735 4825
-Wire Wire Line
-	8900 1310 8900 1480
-Wire Wire Line
-	8900 1480 8510 1480
 $Comp
 L Regulator_Linear:SPX3819M5-L-3-3 U2
 U 1 1 5A82645F
@@ -794,4 +768,111 @@ F 3 "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Da
 	1    8210 1580
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C3
+U 1 1 5AA9410B
+P 8770 1760
+F 0 "C3" H 8640 1860 50  0000 L CNN
+F 1 "10nF" H 8660 1660 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.50mm_HandSolder" H 8808 1610 50  0001 C CNN
+F 3 "" H 8770 1760 50  0001 C CNN
+	1    8770 1760
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5AA941B7
+P 9110 1760
+F 0 "C4" H 8980 1860 50  0000 L CNN
+F 1 "47uF" H 9000 1660 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.50mm_HandSolder" H 9148 1610 50  0001 C CNN
+F 3 "" H 9110 1760 50  0001 C CNN
+	1    9110 1760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7420 1890 7420 1910
+Wire Wire Line
+	9110 1910 8770 1910
+Connection ~ 7420 1910
+Wire Wire Line
+	7420 1910 7420 2120
+Connection ~ 8770 1910
+Wire Wire Line
+	8770 1910 8210 1910
+Wire Wire Line
+	8210 1880 8210 1910
+Connection ~ 8210 1910
+Wire Wire Line
+	8210 1910 7420 1910
+Wire Wire Line
+	8770 1610 8770 1480
+Wire Wire Line
+	8770 1480 8510 1480
+Wire Wire Line
+	9110 1480 9110 1610
+Wire Wire Line
+	8770 1480 9000 1480
+Wire Wire Line
+	9000 1350 9000 1480
+Connection ~ 9000 1480
+Wire Wire Line
+	9000 1480 9110 1480
+Connection ~ 8770 1480
+$Comp
+L ESP8266:ESP-12 U1
+U 1 1 5A2007BB
+P 1775 2450
+F 0 "U1" H 1775 2350 50  0000 C CNN
+F 1 "ESP-12" H 1775 2550 50  0000 C CNN
+F 2 "ESP8266:ESP-12E_SMD" H 1775 2450 50  0001 C CNN
+F 3 "" H 1775 2450 50  0001 C CNN
+	1    1775 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 1490 1775 1550
+$Comp
+L Device:D_Schottky_ALT D1
+U 1 1 5AB29AEC
+P 7420 1315
+F 0 "D1" V 7466 1236 50  0000 R CNN
+F 1 "D_Schottky_ALT" H 7745 1405 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7420 1315 50  0001 C CNN
+F 3 "~" H 7420 1315 50  0001 C CNN
+	1    7420 1315
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7420 1080 7420 1165
+Wire Wire Line
+	7420 1465 7420 1480
+NoConn ~ 8510 1580
+NoConn ~ 6592 1640
+$Comp
+L wickerlib:TEST_1P GND_1
+U 1 1 5AB979C8
+P 4250 1550
+F 0 "GND_1" V 4204 1738 50  0000 L CNN
+F 1 "GND" V 4295 1738 50  0000 L CNN
+F 2 "ripolab_pcb:TestPad" H 4450 1550 50  0001 C CNN
+F 3 "" H 4450 1550 50  0000 C CNN
+	1    4250 1550
+	0    1    1    0   
+$EndComp
+Text GLabel 4250 1550 0    50   Input ~ 0
+GND
+$Comp
+L wickerlib:TEST_1P VCC_1
+U 1 1 5AB987F1
+P 3350 1500
+F 0 "VCC_1" V 3304 1688 50  0000 L CNN
+F 1 "TEST_VCC" V 3395 1688 50  0000 L CNN
+F 2 "ripolab_pcb:TestPad" H 3550 1500 50  0001 C CNN
+F 3 "" H 3550 1500 50  0000 C CNN
+	1    3350 1500
+	0    1    1    0   
+$EndComp
+Text GLabel 3350 1500 0    47   Input ~ 0
++3,3V
 $EndSCHEMATC
