@@ -1,0 +1,1 @@
+python /home/akirasan/Descargas/svg2mod-master/svg2mod.py -f 0.93 -i ./logo_pcb_relleno.svg -o logo_pcb_cara.pretty
