@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name wickerlib)(type Legacy)(uri ${KIPRJMOD}/wickerlib.lib)(options "")(descr ""))
   (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/ESP8266.lib)(options "")(descr ""))
+  (lib (name ripolab_pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/ripolab_pcb-rescue.lib)(options "")(descr ""))
 )
