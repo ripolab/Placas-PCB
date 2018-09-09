@@ -18,7 +18,7 @@ unsigned int estado_boton;
 
 // --- Lista de colores a configurar
 // G R B
-byte colores[][3] = {{255, 0, 0}, {0, 255, 0}, {0, 0, 255} };
+byte colores[][3] = {{255, 0, 0}, {0, 255, 0}, {0, 0, 255}, {0, 55, 55}, {55, 55, 0}, {25, 25, 25}, {51, 153, 51} };
 byte total_colores = (sizeof(colores) / 3) - 1;
 
 byte click_boton = 0;
@@ -203,15 +203,27 @@ void loop() {
       fundir_a_color(2);
       break;
     case 8:
-      efecto_leds(3, 0);
+      fundir_a_color(3);
       break;
     case 9:
-      efecto_leds(1, 0);
+      fundir_a_color(4);
       break;
     case 10:
-      efecto_leds(2, 0);
+      fundir_a_color(5);
       break;
     case 11:
+      fundir_a_color(6);
+      break;
+    case 12:
+      efecto_leds(3, 0);
+      break;
+    case 13:
+      efecto_leds(1, 0);
+      break;
+    case 14:
+      efecto_leds(2, 0);
+      break;
+    case 15:
       efecto_leds(4, 0);
       break;
 
