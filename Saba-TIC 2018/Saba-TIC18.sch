@@ -1,0 +1,220 @@
+EESchema Schematic File Version 4
+LIBS:Saba-TIC18-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED:WS2812B D1
+U 1 1 5B3E4218
+P 5100 2450
+F 0 "D1" H 5250 2200 50  0000 L CNN
+F 1 "WS2812B" H 4700 2200 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4" H 5150 2150 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5200 2075 50  0001 L TNN
+	1    5100 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED:WS2812B D2
+U 1 1 5B3E4294
+P 5100 3300
+F 0 "D2" H 4850 3550 50  0000 L CNN
+F 1 "WS2812B" H 5150 3550 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4" H 5150 3000 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5200 2925 50  0001 L TNN
+	1    5100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B3E70E8
+P 6300 3700
+F 0 "R1" V 6093 3700 50  0000 C CNN
+F 1 "R" V 6184 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6230 3700 50  0001 C CNN
+F 3 "~" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW2
+U 1 1 5B3E7205
+P 6850 1850
+F 0 "SW2" H 6850 2085 50  0000 C CNN
+F 1 "SW_SPST" H 6850 1994 50  0000 C CNN
+F 2 "sabatic:switch_slide" H 6850 1850 50  0001 C CNN
+F 3 "" H 6850 1850 50  0001 C CNN
+	1    6850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5B3E7427
+P 7250 3000
+F 0 "#PWR03" H 7250 2750 50  0001 C CNN
+F 1 "GND" H 7255 2827 50  0000 C CNN
+F 2 "" H 7250 3000 50  0001 C CNN
+F 3 "" H 7250 3000 50  0001 C CNN
+	1    7250 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 1450 6650 1850
+Wire Wire Line
+	7250 3100 7250 3000
+Wire Wire Line
+	5650 2450 5400 2450
+Wire Wire Line
+	4800 2450 4700 2450
+Wire Wire Line
+	4700 2450 4700 3300
+Wire Wire Line
+	4700 3300 4800 3300
+NoConn ~ 5400 3300
+$Comp
+L power:GND #PWR01
+U 1 1 5B3E7E11
+P 4350 2800
+F 0 "#PWR01" H 4350 2550 50  0001 C CNN
+F 1 "GND" V 4355 2672 50  0000 R CNN
+F 2 "" H 4350 2800 50  0001 C CNN
+F 3 "" H 4350 2800 50  0001 C CNN
+	1    4350 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 2150 5100 2050
+Wire Wire Line
+	5100 2050 4350 2050
+Wire Wire Line
+	4350 2050 4350 2800
+Wire Wire Line
+	5100 3600 5100 3750
+Wire Wire Line
+	5100 3750 4350 3750
+Wire Wire Line
+	4350 3750 4350 2800
+Connection ~ 4350 2800
+Wire Wire Line
+	5100 3000 5100 2850
+Wire Wire Line
+	5100 2850 5600 2850
+Wire Wire Line
+	5600 2850 5600 3700
+Wire Wire Line
+	7400 4050 7400 2400
+Wire Wire Line
+	7400 2400 7050 2400
+Connection ~ 5100 2850
+Wire Wire Line
+	5100 2850 5100 2750
+NoConn ~ 6050 2500
+NoConn ~ 6050 2600
+NoConn ~ 6050 3000
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5B62B32E
+P 6450 1450
+F 0 "BT1" V 6195 1500 50  0000 C CNN
+F 1 "Battery_Cell" V 6286 1500 50  0000 C CNN
+F 2 "sabatic:BatteryHolder_Keystone_1058_1x2032" V 6450 1510 50  0001 C CNN
+F 3 "~" V 6450 1510 50  0001 C CNN
+	1    6450 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5B62B857
+P 6250 1600
+F 0 "#PWR0101" H 6250 1350 50  0001 C CNN
+F 1 "GND" H 6255 1427 50  0000 C CNN
+F 2 "" H 6250 1600 50  0001 C CNN
+F 3 "" H 6250 1600 50  0001 C CNN
+	1    6250 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1600 6250 1450
+Wire Wire Line
+	6250 1450 6350 1450
+Wire Wire Line
+	7050 1950 7050 2400
+NoConn ~ 7050 1750
+Wire Wire Line
+	7050 3100 7250 3100
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5B3E65C9
+P 5800 3700
+F 0 "SW1" H 5800 3985 50  0000 C CNN
+F 1 "SW_Push" H 5800 3894 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 5800 3900 50  0001 C CNN
+F 3 "" H 5800 3900 50  0001 C CNN
+	1    5800 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 3700
+Wire Wire Line
+	5600 3700 5600 4050
+Wire Wire Line
+	5600 4050 7400 4050
+Wire Wire Line
+	6000 3700 6050 3700
+Wire Wire Line
+	6050 3700 6050 3150
+Wire Wire Line
+	6050 3150 5900 3150
+Connection ~ 6050 3700
+Wire Wire Line
+	6050 3700 6150 3700
+$Comp
+L power:GND #PWR0102
+U 1 1 5B688276
+P 6550 3700
+F 0 "#PWR0102" H 6550 3450 50  0001 C CNN
+F 1 "GND" H 6555 3527 50  0000 C CNN
+F 2 "" H 6550 3700 50  0001 C CNN
+F 3 "" H 6550 3700 50  0001 C CNN
+	1    6550 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 3700 6550 3700
+Connection ~ 7050 2400
+$Comp
+L Saba-TIC18-rescue:ATTINY85-20PU-Saba-TIC18-cache U1
+U 1 1 5B3E6F60
+P 6550 2750
+F 0 "U1" H 6550 3367 50  0000 C CNN
+F 1 "ATTINY85-20PU" H 6550 3276 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6300 3350 50  0001 L BNN
+F 3 "1.31 USD" H 6950 2800 50  0001 L BNN
+F 4 "ATTINY85-20PU" H 6900 2650 50  0001 L BNN "Field4"
+F 5 "Good" H 7050 2500 50  0001 L BNN "Field5"
+F 6 "ATtiny Series 20 MHz 8 KB Flash 512 B SRAM 8-Bit Microcontroller - DIP-8" H 6900 2550 50  0001 L BNN "Field6"
+F 7 "Microchip" H 7300 2500 50  0001 L BNN "Field7"
+F 8 "DIP-8 Microchip" H 6900 2900 50  0001 L BNN "Field8"
+	1    6550 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2700 5650 2700
+Wire Wire Line
+	5650 2700 5650 2450
+Wire Wire Line
+	6050 2800 5900 2800
+Wire Wire Line
+	5900 2800 5900 3150
+NoConn ~ 6050 2900
+$EndSCHEMATC
